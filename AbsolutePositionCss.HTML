@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute Position</title>
+    <style>
+        .child{
+            border: 2px solid red;
+            height:50px;
+            width:50px;
+            background-color: yellow;
+            top: 100px;
+            position: relative;
+        }
+        .parent{
+            border: 2px solid black;
+            width: 50px;
+            padding: 40px 50px;
+            background-color: aqua;
+        }
+        .grandparent{
+            border: 2px solid green;
+            width:155px;
+            padding: 50px;
+            background-color: lightcoral;
+            position: relative;
+}
+    </style>
+</head>
+<body>
+    <div class="grandparent">
+        <div class="parent">
+            <div class="child"></div>
+        </div>
+    </div>
+</body>
+</html>
